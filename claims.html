@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims & Activity | ShadowPay</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-bg"></div>
+    <div class="orb cool" style="width: 800px; height: 800px; opacity: 0.1;"></div>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-pane" style="border-radius: 0; box-shadow: none;">
+            <div class="brand"><i class="ph-fill ph-umbrella"></i> ShadowPay</div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item"><i class="ph-fill ph-squares-four"></i> Dashboard</a>
+                <a href="claims.html" class="nav-item active"><i class="ph-fill ph-clock-counter-clockwise"></i> Activity & Claims</a>
+                <a href="pricing.html" class="nav-item"><i class="ph-fill ph-shield-check"></i> Coverage Plan</a>
+                <a href="#" class="nav-item"><i class="ph-fill ph-gear"></i> Settings</a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">R</div>
+                <div class="user-info"><span class="name">Rajan V.</span><span class="role">Anna Nagar Zone</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <div>
+                    <h1>Claims & Activity</h1>
+                    <p>Total seamless payouts received: <strong>₹1,240</strong></p>
+                </div>
+            </header>
+
+            <div class="glass-pane" style="padding: 0; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead style="background: rgba(255,255,255,0.03); border-bottom: 1px solid var(--glass-border);">
+                        <tr>
+                            <th style="padding: 24px; color: var(--text-secondary); font-weight: 500;">Date</th>
+                            <th style="padding: 24px; color: var(--text-secondary); font-weight: 500;">Event / Trigger</th>
+                            <th style="padding: 24px; color: var(--text-secondary); font-weight: 500;">Status</th>
+                            <th style="padding: 24px; color: var(--text-secondary); font-weight: 500;">Amount</th>
+                            <th style="padding: 24px; color: var(--text-secondary); font-weight: 500; text-align: right;">Transfer Ref</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--glass-border);">
+                            <td style="padding: 24px;">Today, 9:00 AM</td>
+                            <td style="padding: 24px;"><i class="ph-fill ph-receipt text-secondary" style="margin-right: 8px;"></i> Weekly Premium AutoPay</td>
+                            <td style="padding: 24px;"><span class="text-secondary">Deducted</span></td>
+                            <td style="padding: 24px; font-weight: bold;">-₹49</td>
+                            <td style="padding: 24px; text-align: right; color: var(--text-secondary); font-family: monospace;">UPI/9028A...</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--glass-border);">
+                            <td style="padding: 24px;">Oct 12, 2:45 PM</td>
+                            <td style="padding: 24px;"><i class="ph-fill ph-cloud-rain text-success" style="margin-right: 8px;"></i> Heavy Rain > 35mm/hr</td>
+                            <td style="padding: 24px;"><span style="background: rgba(16,185,129,0.1); color: var(--success); padding: 4px 12px; border-radius: 50px; font-size: 0.85rem;"><i class="ph-bold ph-check"></i> Auto-Paid</span></td>
+                            <td style="padding: 24px; font-weight: bold; color: var(--success);">+₹320</td>
+                            <td style="padding: 24px; text-align: right; color: var(--text-secondary); font-family: monospace;">UPI/4409B...</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--glass-border);">
+                            <td style="padding: 24px;">Oct 05, 1:10 PM</td>
+                            <td style="padding: 24px;"><i class="ph-fill ph-wifi-slash text-warning" style="margin-right: 8px;"></i> Platform Outage (90m+)</td>
+                            <td style="padding: 24px;"><span style="background: rgba(16,185,129,0.1); color: var(--success); padding: 4px 12px; border-radius: 50px; font-size: 0.85rem;"><i class="ph-bold ph-check"></i> Auto-Paid</span></td>
+                            <td style="padding: 24px; font-weight: bold; color: var(--success);">+₹450</td>
+                            <td style="padding: 24px; text-align: right; color: var(--text-secondary); font-family: monospace;">UPI/1199X...</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 24px;">Sep 22, 4:00 PM</td>
+                            <td style="padding: 24px;"><i class="ph-fill ph-cloud-rain text-success" style="margin-right: 8px;"></i> Heavy Rain</td>
+                            <td style="padding: 24px;"><span style="background: rgba(16,185,129,0.1); color: var(--success); padding: 4px 12px; border-radius: 50px; font-size: 0.85rem;"><i class="ph-bold ph-check"></i> Auto-Paid</span></td>
+                            <td style="padding: 24px; font-weight: bold; color: var(--success);">+₹470</td>
+                            <td style="padding: 24px; text-align: right; color: var(--text-secondary); font-family: monospace;">UPI/8834F...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 40px;" class="glass-pane">
+                <h3 style="margin-bottom: 16px;">How Adversarial Defense Protects This</h3>
+                <p class="text-secondary">Your Trust Score is <strong>18 (Excellent)</strong>. You have "Instant Liquidity Status" because your sensor data (Barometer/Mic) and behavioral metrics heavily align with legitimate disruptions. Your claims skip manual holds and trigger instantly.</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

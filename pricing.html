@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverage Plan | ShadowPay</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-bg"></div>
+    <div class="orb warm" style="width: 800px; height: 800px; opacity: 0.1;"></div>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-pane" style="border-radius: 0; box-shadow: none;">
+            <div class="brand"><i class="ph-fill ph-umbrella"></i> ShadowPay</div>
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item"><i class="ph-fill ph-squares-four"></i> Dashboard</a>
+                <a href="claims.html" class="nav-item"><i class="ph-fill ph-clock-counter-clockwise"></i> Activity & Claims</a>
+                <a href="pricing.html" class="nav-item active"><i class="ph-fill ph-shield-check"></i> Coverage Plan</a>
+                <a href="#" class="nav-item"><i class="ph-fill ph-gear"></i> Settings</a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">R</div>
+                <div class="user-info"><span class="name">Rajan V.</span><span class="role">Anna Nagar Zone</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header" style="justify-content: center; text-align: center; margin-bottom: 60px; display: block;">
+                <h1>Honest Weekly Pricing</h1>
+                <p>Because you earn weekly, spend weekly, and pay rent weekly.</p>
+                
+                <div style="background: rgba(255,255,255,0.05); display: inline-block; padding: 12px 24px; border-radius: 50px; margin-top: 24px; border: 1px solid var(--glass-border);">
+                    <i class="ph-fill ph-info"></i> Premium calculated based on your Trust Score (18) and Zone Risk (High).
+                </div>
+            </header>
+
+            <div class="pricing-wrapper">
+                <!-- Basic -->
+                <div class="glass-pane tier-card">
+                    <h3 class="text-secondary">Basic</h3>
+                    <div class="tier-price text-pure">₹29<span>/wk</span></div>
+                    <ul class="tier-features">
+                        <li><i class="ph-bold ph-check"></i> Max payout: ₹350/week</li>
+                        <li><i class="ph-bold ph-check"></i> For relatively dry zones</li>
+                        <li><i class="ph-bold ph-check"></i> Standard triggers</li>
+                    </ul>
+                    <button class="btn btn-secondary select-plan-btn" style="width: 100%; margin-top: auto;" data-plan="Basic" data-price="29">Select Basic</button>
+                </div>
+
+                <!-- Standard -->
+                <div class="glass-pane tier-card pro-tier" style="transform: scale(1.05); z-index: 10;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; background: var(--grad-cool); color: var(--bg-base); font-weight: bold; padding: 6px; font-size: 0.85rem;">YOUR CURRENT TIER</div>
+                    <h3 class="text-gradient-cool" style="margin-top: 24px;">Standard</h3>
+                    <div class="tier-price text-pure">₹49<span>/wk</span></div>
+                    <ul class="tier-features">
+                        <li><i class="ph-bold ph-check"></i> Max payout: ₹600/week</li>
+                        <li><i class="ph-bold ph-check"></i> Year-round protection</li>
+                        <li><i class="ph-bold ph-check"></i> Dynamic premium discounts</li>
+                    </ul>
+                    <button class="btn select-plan-btn" style="width: 100%; margin-top: auto; background: var(--success); color: white;" data-plan="Standard" data-price="49"><i class="ph-bold ph-check"></i> Active</button>
+                </div>
+
+                <!-- Pro -->
+                <div class="glass-pane tier-card">
+                    <h3 class="text-gradient-warm">Pro</h3>
+                    <div class="tier-price text-pure">₹79<span>/wk</span></div>
+                    <ul class="tier-features">
+                        <li><i class="ph-bold ph-check"></i> Max payout: ₹1,000/week</li>
+                        <li><i class="ph-bold ph-check"></i> Flood-prone areas priority</li>
+                        <li><i class="ph-bold ph-check"></i> Monsoon months ready</li>
+                    </ul>
+                    <button class="btn btn-secondary select-plan-btn" style="width: 100%; margin-top: auto;" data-plan="Pro" data-price="79">Select Pro</button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px; color: var(--text-secondary);">
+                <p>Cancel any Sunday night with no lock-in fees. Payments run on UPI Autopay.</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

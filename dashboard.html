@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ShadowPay</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-bg"></div>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-pane" style="border-radius: 0; box-shadow: none;">
+            <div class="brand">
+                <i class="ph-fill ph-umbrella"></i> ShadowPay
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="dashboard.html" class="nav-item active"><i class="ph-fill ph-squares-four"></i> Dashboard</a>
+                <a href="claims.html" class="nav-item"><i class="ph-fill ph-clock-counter-clockwise"></i> Activity & Claims</a>
+                <a href="pricing.html" class="nav-item"><i class="ph-fill ph-shield-check"></i> Coverage Plan</a>
+                <a href="#" class="nav-item"><i class="ph-fill ph-gear"></i> Settings</a>
+            </nav>
+            
+            <div class="user-profile">
+                <div class="avatar">R</div>
+                <div class="user-info">
+                    <span class="name">Rajan V.</span>
+                    <span class="role">Anna Nagar Zone</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <div>
+                    <h1>Overview</h1>
+                    <p>Welcome back, Rajan. You are protected under the <strong>Standard Plan</strong>.</p>
+                </div>
+                <button id="btn-report" class="btn btn-secondary"><i class="ph-bold ph-warning"></i> Report Disruption</button>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Live Weather Widget -->
+                <div class="glass-pane live-widget">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div class="weather-status">
+                            <i class="ph-fill ph-cloud-rain weather-icon"></i>
+                            <div class="weather-info">
+                                <h2>Heavy Rainfall Alert</h2>
+                                <p>Anna Nagar • Active Now</p>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="background: rgba(239, 68, 68, 0.2); color: var(--danger); padding: 6px 16px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; border: 1px solid rgba(239, 68, 68, 0.4);">
+                                <i class="ph-fill ph-warning-circle"></i> IMD RED ALERT
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="gap-tracker">
+                        <div class="tracker-labels">
+                            <span class="text-secondary">Shadow Earnings <span id="shadow-earnings">₹480</span></span>
+                            <span class="text-secondary">Actual Earnings <span id="actual-earnings">₹210</span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill shadow"></div>
+                            <div class="progress-fill actual"></div>
+                        </div>
+                        <div class="gap-status">
+                            <i class="ph-bold ph-trend-down"></i> Earnings gap is > 35%. <strong style="color:var(--text-pure); margin-left:8px;">Estimated Payout: ₹216</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="glass-pane stat-card">
+                    <div class="stat-header">
+                        <h3>Weekly Income Protected</h3>
+                        <div class="stat-icon blue"><i class="ph-fill ph-shield-check"></i></div>
+                    </div>
+                    <div>
+                        <div class="stat-value">₹1,240</div>
+                        <div class="stat-delta positive"><i class="ph-bold ph-trend-up"></i> +12% vs last week</div>
+                    </div>
+                </div>
+
+                <div class="glass-pane stat-card">
+                    <div class="stat-header">
+                        <h3>Trust Score</h3>
+                        <div class="stat-icon purple"><i class="ph-fill ph-fingerprint"></i></div>
+                    </div>
+                    <div>
+                        <div class="stat-value">18 <span style="font-size: 1rem; color: var(--text-secondary); font-weight: normal;">/ 100</span></div>
+                        <div class="stat-delta positive"><i class="ph-bold ph-check-circle"></i> Auto-Approve Status (Low is better)</div>
+                    </div>
+                </div>
+
+                <div class="glass-pane stat-card">
+                    <div class="stat-header">
+                        <h3>Active Subscriptions</h3>
+                        <div class="stat-icon orange"><i class="ph-fill ph-credit-card"></i></div>
+                    </div>
+                    <div>
+                        <div class="stat-value" style="font-size: 2rem;">Standard Tier</div>
+                        <div class="stat-delta text-secondary">₹49/wk via UPI Autopay</div>
+                    </div>
+                </div>
+
+                <!-- Activity List -->
+                <div class="glass-pane activity-widget">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <h3>Recent Activity</h3>
+                        <a href="claims.html" class="text-accent-tertiary" style="color: var(--accent-tertiary); font-size: 0.9rem;">View All</a>
+                    </div>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background: rgba(252, 128, 25, 0.1); color: var(--accent-primary);"><i class="ph-fill ph-receipt"></i></div>
+                            <div class="activity-details" style="flex: 1;">
+                                <div class="activity-title">Weekly Premium Paid</div>
+                                <div class="activity-time">Yesterday, 9:00 AM</div>
+                            </div>
+                            <div class="activity-amount" style="color: var(--text-pure);">-₹49</div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background: rgba(0, 229, 255, 0.1); color: var(--accent-tertiary);"><i class="ph-fill ph-cloud-rain"></i></div>
+                            <div class="activity-details" style="flex: 1;">
+                                <div class="activity-title">Payout: Heavy Rain</div>
+                                <div class="activity-time">Oct 12, 2:45 PM</div>
+                            </div>
+                            <div class="activity-amount text-success">+₹320</div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--success);"><i class="ph-fill ph-check-circle"></i></div>
+                            <div class="activity-details" style="flex: 1;">
+                                <div class="activity-title">Trust Score Updated</div>
+                                <div class="activity-time">Oct 10</div>
+                            </div>
+                            <div class="activity-amount" style="color: var(--text-secondary);">--</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

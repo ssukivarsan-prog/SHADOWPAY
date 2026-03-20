@@ -3,326 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowPay | Delivery Partner Income Protection</title>
+    <title>ShadowPay | Income Protection for Delivery Partners</title>
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icons (Phosphor Icons) -->
+    <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Background Effects -->
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-    <div class="glow-orb orb-3"></div>
+    <div class="ambient-bg"></div>
+    <div class="orb cool"></div>
+    <div class="orb warm"></div>
 
-    <nav class="navbar">
-        <div class="container nav-content">
-            <div class="logo">
-                <i class="ph-fill ph-umbrella"></i> ShadowPay
-            </div>
-            <div class="nav-links">
-                <a href="#problem">The Problem</a>
-                <a href="#coverage">Coverage</a>
-                <a href="#model">The Model</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#defense">Defense</a>
-            </div>
+    <nav class="landing-nav">
+        <div class="brand">
+            <i class="ph-fill ph-umbrella"></i> ShadowPay
+        </div>
+        <div>
+            <a href="login.html" class="btn btn-secondary">Partner Login</a>
+            <a href="login.html" class="btn btn-primary" style="margin-left: 12px;">Get Covered</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="badge fade-up">Guidewire DEVTrails 2026 &middot; Phase 1</div>
-            <h1 class="fade-up delay-1">Protecting <span class="gradient-text-warm">Zomato & Swiggy</span> partners from income loss.</h1>
-            <p class="subtitle fade-up delay-2">We're building something we genuinely wish existed. A parametric insurance that triggers automatically when the world makes it impossible to work.</p>
-            <div class="cta-group fade-up delay-3">
-                <a href="#model" class="btn btn-primary">See How It Works</a>
-                <a href="#problem" class="btn btn-secondary">Read Rajan's Story</a>
-            </div>
-        </div>
-        <div class="hero-image-container fade-up delay-4">
-            <div class="glass-mockup">
-                <div class="mockup-header">
-                    <i class="ph ph-bell"></i>
-                    <span>ShadowPay Alert</span>
-                </div>
-                <div class="mockup-body">
-                    <i class="ph-fill ph-cloud-rain mockup-icon gradient-text-cool"></i>
-                    <h3>Heavy rain in Anna Nagar</h3>
-                    <p>We're sending you <strong>₹320</strong> for today's lost hours.<br>Stay safe.</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="problem" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>The Person We're Building For</h2>
-                <p>Not vaguely. For Rajan specifically.</p>
+    <div class="hero-split">
+        <div class="hero-text">
+            <h1>Get Paid When The <span class="text-gradient-cool">Sky Falls.</span></h1>
+            <p>Chennai's first parametric income protection. When heavy rain, cyclones, or platform outages stop you from riding, we pay you for the hours you lost automatically. No claims to file.</p>
+            <div style="display: flex; gap: 16px;">
+                <a href="login.html" class="btn btn-primary">Sign in with Phone <i class="ph-bold ph-arrow-right"></i></a>
             </div>
             
-            <div class="story-grid">
-                <div class="story-content fade-up">
-                    <p class="lead">Last October during the northeast monsoon, one of our team member's uncle lost nearly ₹6,000 in a single week because he simply couldn't ride.</p>
-                    <p>His name is Rajan. 27 years old, rides a Honda Activa in Anna Nagar, Chennai. Works Zomato. On a good day he makes ₹700–800.</p>
-                    <p>When it rains heavily, he doesn't just slow down — he stops completely. The roads flood. He can't see. The app keeps pinging with orders he can't take. His weekly earnings dropped from ₹4,200 to ₹2,640. With rent at ₹3,200 and bike EMI at ₹1,100, he had to ask his mother for money.</p>
-                    <div class="quote-box">
-                        <i class="ph-fill ph-quotes"></i>
-                        <p>There's no insurance that covers this. Zomato Shield is accident-only. Vehicle insurance doesn't pay because the bike is fine — the problem is the sky.</p>
-                    </div>
+            <div style="margin-top: 48px; display: flex; gap: 32px;">
+                <div>
+                    <h3 style="font-size: 2rem;">Under 15m</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem;">From Disruption to UPI</p>
                 </div>
-                <div class="story-stats fade-up delay-2">
-                    <div class="stat-card">
-                        <div class="stat-value">₹4,200</div>
-                        <div class="stat-label">Normal Weekly Earnings</div>
-                    </div>
-                    <div class="stat-card negative">
-                        <div class="stat-value">₹2,640</div>
-                        <div class="stat-label">Earnings During Flood Week</div>
-                    </div>
-                    <div class="stat-card fixed">
-                        <div class="stat-value">₹4,300</div>
-                        <div class="stat-label">Weekly Fixed Expenses (Rent + EMI)</div>
-                    </div>
+                <div>
+                    <h3 style="font-size: 2rem;">80%</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Of Shadow Earnings Paid</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2rem;" class="text-gradient-warm">₹49</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem;">Starting Weekly Premium</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="coverage" class="section bg-surface">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>What We Cover</h2>
-                <p>We cover one thing: income lost because the world made it impossible to work. (Chennai context)</p>
-            </div>
-
-            <div class="coverage-grid">
-                <div class="coverage-card fade-up">
-                    <i class="ph-fill ph-cloud-rain card-icon gradient-text-cool"></i>
-                    <h3>Heavy Rain / Red Alert</h3>
-                    <p><strong>Trigger:</strong> IMD red/orange alert or > 35mm/hr.<br><strong>Source:</strong> IMD API + sensor check.</p>
+        
+        <div class="hero-visual">
+            <div class="glass-pane hero-card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+                    <i class="ph-fill ph-check-circle text-success" style="font-size: 1.5rem;"></i>
+                    <span class="text-secondary">Payout Triggered</span>
                 </div>
-                <div class="coverage-card fade-up delay-1">
-                    <i class="ph-fill ph-wind card-icon gradient-text-cool"></i>
-                    <h3>Cyclone Warning</h3>
-                    <p><strong>Trigger:</strong> NDMA advisory active.<br><strong>Source:</strong> NDMA feed.</p>
+                <h3 style="font-size: 1.8rem; margin-bottom: 8px;">Heavy Rain Active</h3>
+                <p class="text-secondary" style="margin-bottom: 24px;">Anna Nagar Zone detected heavy rainfall > 35mm/hr. Delivering is impossible.</p>
+                
+                <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; margin-bottom: 24px; border: 1px solid var(--glass-border);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                        <span>Lost Shadow Earnings</span>
+                        <span style="font-family: var(--font-heading); font-weight: bold;">₹400</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span class="text-gradient-warm" style="font-weight: 600;">Sending to UPI (80%)</span>
+                        <span class="text-success" style="font-family: var(--font-heading); font-weight: bold; font-size: 1.2rem;">₹320</span>
+                    </div>
                 </div>
-                <div class="coverage-card fade-up delay-2">
-                    <i class="ph-fill ph-thermometer-hot card-icon gradient-text-warm"></i>
-                    <h3>Extreme Heat</h3>
-                    <p><strong>Trigger:</strong> Feels-like > 43°C during work.<br><strong>Source:</strong> OpenWeatherMap.</p>
-                </div>
-                <div class="coverage-card fade-up">
-                    <i class="ph-fill ph-factory card-icon text-gray"></i>
-                    <h3>Severe Pollution</h3>
-                    <p><strong>Trigger:</strong> AQI > 300.<br><strong>Source:</strong> CPCB API.</p>
-                </div>
-                <div class="coverage-card fade-up delay-1">
-                    <i class="ph-fill ph-shield-warning card-icon text-gray"></i>
-                    <h3>Curfew / Section 144</h3>
-                    <p><strong>Trigger:</strong> Official district advisory.<br><strong>Source:</strong> Govt feed.</p>
-                </div>
-                <div class="coverage-card fade-up delay-2">
-                    <i class="ph-fill ph-wifi-slash card-icon gradient-text-warm"></i>
-                    <h3>Platform Outage</h3>
-                    <p><strong>Trigger:</strong> API down > 90 minutes.<br><strong>Source:</strong> Uptime monitor.</p>
-                </div>
+                
+                <button class="btn btn-secondary" style="width: 100%; border-color: rgba(0, 229, 255, 0.3); color: var(--accent-tertiary);">Check Bank Account</button>
             </div>
         </div>
-    </section>
-
-    <section id="model" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>The Shadow Earnings Model</h2>
-                <p>We trigger on outcomes (lost income), not just events.</p>
-            </div>
-
-            <div class="model-layout">
-                <div class="model-text fade-up">
-                    <p>Every 15 minutes, our XGBoost model predicts Rajan's "Shadow Earnings" — what he <em>should</em> be earning right now based on:</p>
-                    <ul class="feature-list">
-                        <li><i class="ph-fill ph-clock"></i> Hour of day & day of week (lunch vs dinner)</li>
-                        <li><i class="ph-fill ph-user"></i> Personal historical average for this slot</li>
-                        <li><i class="ph-fill ph-users-three"></i> Active riders in zone (supply vs demand)</li>
-                        <li><i class="ph-fill ph-cloud-sun"></i> Weather status & local events</li>
-                    </ul>
-                    <p>When actual earnings fall 35%+ below the shadow prediction AND a disruption is active, we pay 80% of the gap automatically. Under 15 minutes.</p>
-                </div>
-                <div class="model-code fade-up delay-2">
-                    <div class="code-window">
-                        <div class="code-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                            <span class="filename">payout_engine.py</span>
-                        </div>
-                        <pre><code><span class="keyword">shadow</span> = shadow_model.predict(worker_id, current_time)
-<span class="keyword">actual</span> = platform_api.get_earnings(worker_id, last_2h)
-<span class="keyword">gap</span>    = (shadow - actual) / shadow
-
-<span class="control">if</span> gap > <span class="number">0.35</span> <span class="operator">and</span> disruption_active <span class="operator">and</span> trust_score < <span class="number">70</span>:
-    payout = <span class="function">min</span>((shadow - actual) * <span class="number">0.80</span>, weekly_cap)
-    send_to_worker(worker_id, payout)</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="section bg-surface">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>Honest Weekly Pricing</h2>
-                <p>Workers think weekly. They spend weekly. We price weekly. Auto-renewed via UPI.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <!-- Basic -->
-                <div class="pricing-card fade-up">
-                    <div class="tier-name">Basic</div>
-                    <div class="tier-price">₹29<span>/week</span></div>
-                    <div class="tier-desc">Max payout: ₹350/week</div>
-                    <ul class="tier-features">
-                        <li><i class="ph ph-check"></i> For new workers</li>
-                        <li><i class="ph ph-check"></i> Relatively dry zones</li>
-                        <li><i class="ph ph-check"></i> Standard triggers</li>
-                    </ul>
-                    <button class="btn btn-outline">Select Basic</button>
-                </div>
-                <!-- Standard -->
-                <div class="pricing-card popular fade-up delay-1">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="tier-name gradient-text-warm">Standard</div>
-                    <div class="tier-price">₹49<span>/week</span></div>
-                    <div class="tier-desc">Max payout: ₹600/week</div>
-                    <ul class="tier-features">
-                        <li><i class="ph ph-check"></i> For most workers</li>
-                        <li><i class="ph ph-check"></i> Year-round protection</li>
-                        <li><i class="ph ph-check"></i> Dynamic premium discounts</li>
-                    </ul>
-                    <button class="btn btn-primary">Select Standard</button>
-                </div>
-                <!-- Pro -->
-                <div class="pricing-card fade-up delay-2">
-                    <div class="tier-name gradient-text-cool">Pro</div>
-                    <div class="tier-price">₹79<span>/week</span></div>
-                    <div class="tier-desc">Max payout: ₹1,000/week</div>
-                    <ul class="tier-features">
-                        <li><i class="ph ph-check"></i> For high earners</li>
-                        <li><i class="ph ph-check"></i> Flood-prone areas</li>
-                        <li><i class="ph ph-check"></i> Monsoon months</li>
-                    </ul>
-                    <button class="btn btn-outline">Select Pro</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="onboarding" class="section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>3 Screens. 4 Minutes.</h2>
-                <p>Designed for someone on a bike. No KYC uploads, no long forms.</p>
-            </div>
-
-            <div class="steps-grid">
-                <div class="step-card fade-up">
-                    <div class="step-num">1</div>
-                    <div class="step-ui">
-                        <div class="glass-mockup small">
-                            <h4>Enter Phone</h4>
-                            <div class="dummy-input">+91 98765 43210</div>
-                            <div class="dummy-btn">Get OTP</div>
-                        </div>
-                    </div>
-                    <h3>Phone + OTP</h3>
-                    <p>We automatically pull his zone and history from platform APIs.</p>
-                </div>
-                <div class="step-card fade-up delay-1">
-                    <div class="step-num">2</div>
-                    <div class="step-ui">
-                        <div class="glass-mockup small">
-                            <h4>Personalized Value</h4>
-                            <p class="small-text">"Standard tier would have paid you <b>₹1,200</b> of the ₹1,840 you lost last month."</p>
-                            <div class="dummy-btn outline">Standard - ₹49/wk</div>
-                        </div>
-                    </div>
-                    <h3>Pick a Tier</h3>
-                    <p>We show past lost income vs what we would have paid.</p>
-                </div>
-                <div class="step-card fade-up delay-2">
-                    <div class="step-num">3</div>
-                    <div class="step-ui">
-                        <div class="glass-mockup small">
-                            <i class="ph-fill ph-check-circle step-icon text-green"></i>
-                            <h4>AutoPay Set</h4>
-                            <p class="small-text">Coverage starts Monday.</p>
-                        </div>
-                    </div>
-                    <h3>UPI AutoPay</h3>
-                    <p>One tap setup. Cancel any Sunday night without penalties.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="defense" class="section bg-surface">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2>Adversarial Defense</h2>
-                <p>Solving the "GPS Syndicate" problem. We stop trusting location and trust convergent physical evidence.</p>
-            </div>
-
-            <div class="defense-layout">
-                <div class="defense-item fade-up">
-                    <div class="defense-icon"><i class="ph-fill ph-waves"></i></div>
-                    <div class="defense-content">
-                        <h3>1. Sensor Fusion Pipeline</h3>
-                        <p>We read barometric pressure, humidity, and the microphone for rain signatures. A Random Forest checks if the phone environment actually matches a rainstorm.</p>
-                    </div>
-                </div>
-                <div class="defense-item fade-up delay-1">
-                    <div class="defense-icon"><i class="ph-fill ph-users"></i></div>
-                    <div class="defense-content">
-                        <h3>2. Peer Consensus</h3>
-                        <p>Are 3+ workers within 500m also losing income right now? If only one person's earnings drop during a "flood", it's suspicious.</p>
-                    </div>
-                </div>
-                <div class="defense-item fade-up delay-2">
-                    <div class="defense-icon"><i class="ph-fill ph-person-simple-walk"></i></div>
-                    <div class="defense-content">
-                        <h3>3. Behavioral Motion (LSTM)</h3>
-                        <p>A stranded partner checking their phone in the rain has a different accelerometer signature than someone sitting still at home spoofing GPS.</p>
-                    </div>
-                </div>
-                <div class="defense-item fade-up delay-3">
-                    <div class="defense-icon"><i class="ph-fill ph-plugs"></i></div>
-                    <div class="defense-content">
-                        <h3>4. Platform Ground Truth</h3>
-                        <p>If the delivery platform itself isn't showing a massive drop in order assignment rates in that zone, the disruption isn't real.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <i class="ph-fill ph-umbrella"></i> ShadowPay
-            </div>
-            <p>Phase 1 Prototype &middot; Developed with ❤️ for delivery partners.</p>
-        </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

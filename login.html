@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ShadowPay</title>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+    <div class="orb warm" style="top: 10%; right: 10%; left: auto; bottom: auto;"></div>
+
+    <div class="centric-container">
+        <div class="glass-pane login-box">
+            <div class="brand">
+                <i class="ph-fill ph-umbrella"></i> ShadowPay
+            </div>
+            
+            <h2>Partner Login</h2>
+            <p>Enter your registered Zomato or Swiggy phone number.</p>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <div style="display: flex; gap: 12px;">
+                        <input type="text" class="input-field" value="+91" disabled style="width: 80px; text-align: center; color: var(--text-secondary); background: rgba(0,0,0,0.5);">
+                        <input type="tel" class="input-field" placeholder="98765 43210" required autofocus maxlength="10">
+                    </div>
+                </div>
+                
+                <div class="input-group" style="margin-top: -8px;">
+                    <label>6-Digit OTP</label>
+                    <input type="text" class="input-field" placeholder="• • • • • •" required maxlength="6" style="letter-spacing: 4px; text-align: center; font-size: 1.2rem;">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px; padding: 20px;">
+                    Login to Dashboard <i class="ph-bold ph-arrow-right"></i>
+                </button>
+            </form>
+            
+            <div style="margin-top: 24px; font-size: 0.85rem; color: var(--text-secondary);">
+                By logging in, you agree to ShadowPay's <a href="#" style="color: var(--text-pure); text-decoration: underline;">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
